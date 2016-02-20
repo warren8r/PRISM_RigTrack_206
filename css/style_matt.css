@@ -1,0 +1,122 @@
+/* Table layout */
+.demo-container table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+ 
+.demo-container table th,
+.demo-container table td {
+    padding: 6px 10px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+ 
+.yesNoHovered .rbTex {
+    color: White !important;
+}
+ 
+.imgBtnTable td {
+    padding: 5px;
+}
+ 
+.imgBtnTable td.center {
+    text-align: center;
+    width: 250px;
+}
+ 
+/* Simple Button */
+.RadButton.rbRounded.css3Simple {
+    border-radius: 5px;
+}
+ 
+/* Simple Button with rounded corners and shadows */
+.RadButton.rbButton.css3Shadows {
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px #666;
+}
+ 
+.RadButton.rbButton.css3Shadows:hover {
+    border: 0;
+    box-shadow: 1px 2px 5px #999;
+}
+ 
+/* Circle Button */
+.RadButton.rbButton.css3Circle {
+    border-radius: 45px;
+    padding: 0;
+    font-size: 24px;
+}
+ 
+.css3CircGrad {
+    background: linear-gradient(-45deg, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+}
+ 
+.css3CircGrad:hover {
+    background: linear-gradient(45deg, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* W3C */
+}
+ 
+/* Opposite corners */
+.RadButton.rbButton.css3Opposite {
+    border: 0;
+    border-radius: 3px 10px 3px 10px;
+    box-shadow: 1px 2px 5px #666;
+}
+ 
+.RadButton.rbButton.css3Opposite:hover {
+    border: 0;
+    box-shadow: 1px 2px 5px #999;
+}
+ 
+/* Different corners */
+.css3Diff {
+    border-radius: 15px 10px 0px 25px;
+}
+ 
+/* Gradient button */
+button.RadButton.rbButton.css3Grad {
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 1px 3px 7px #666;
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+}
+ 
+.RadButton.rbButton.css3Grad:hover {
+    border: 0;
+    box-shadow: 1px 3px 7px #999;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%);
+    background: -o-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%);
+    background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%);
+    background: linear-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* W3C */
+}
+ 
+/* Content tempalte */
+ 
+.RadButton.rbButton.css3Cont {
+    line-height: normal !important;
+    padding-top: 10px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px #444;
+    background: #c3d9ff; /* Old browsers */
+    background: linear-gradient(top, #c3d9ff 0%,#b1c8ef 41%,#98b0d9 100%); /* W3C */
+}
+ 
+.RadButton.rbButton.css3Cont em {
+    font-size: 10px;
+    display: block;
+}
+ 
+.RadButton.rbButton.css3Cont:hover {
+    border: 0;
+    background: #fefcea; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmNlYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMWRhMzYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: linear-gradient(top, #fefcea 0%,#f1da36 100%); /* W3C */
+}

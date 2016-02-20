@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Home" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+   <%-- <meta http-equiv="Content-type" content="text/html;charset=UTF-8">--%>
+     <link href="css/main.css" type="text/css" rel="Stylesheet" />
+     <!-- This file does not exist. <link rel="stylesheet" type="text/css" href="Styles/global.css" /> -->
+    <asp:ContentPlaceHolder id="head" runat="server">
+       
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="MasterPageForm1" class="cmxform"  runat="server">
+    <div>
+    <telerik:RadScriptManager runat="server" ID="RadScriptManager1" />
+    <table style="width:100%" border="0" cellpadding="0" cellspacing="0">
+       <tr>
+                <td >
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="logo">
+                        <tr>
+                            <td align="left" style="padding-left: 10px; width:80px">
+                                <b style="color: White; font-size: 25px"><img src="<%= Page.ResolveUrl("~")%>images/Prism-Logo1_RGBTP_1.png" alt="logo" /></b>
+                            </td>
+                            <td style="color:White; font-size:16px; font-weight:bold" align="left">
+                               
+                            </td>
+                        </tr>
+                        <tr><td style="height:2px"></td></tr>
+                    </table>
+                </td>
+            </tr>
+    </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

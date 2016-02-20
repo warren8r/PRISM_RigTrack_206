@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SsiteMapNodeap-File-1.0" >
+    <siteMapNode url="/ClientAdmin/ClientHome.aspx" title="Home"  description="Home page">
+
+        <siteMapNode title="Manage Client Users"  description="THIS IS TIME OF USE">
+            <siteMapNode  title="Manage User Types" url="/ClientAdmin/ClientRole.aspx"  />
+            <siteMapNode  title="Manage Client Users" url="/ClientAdmin/CreateClientUsers.aspx" />
+        </siteMapNode>
+
+        <siteMapNode title="Configuration Manager">
+
+          <siteMapNode title="Manage Warehouses" url="/Modules/Configuration_Manager/Managewarehouse.aspx"></siteMapNode>
+          <siteMapNode  title="Manage Customers" url="/Modules/Configuration_Manager/ManageCustomers.aspx"></siteMapNode>
+            <siteMapNode title="Meter Assets">
+                <siteMapNode  title="Manage Asset Categories" url="/Modules/Configuration_Manager/ManageAssetCategories.aspx" />
+                <siteMapNode  title="Set Attribute Intervals" url="/Modules/Configuration_Manager/confMngrSetAttributeInterval.aspx" />
+            </siteMapNode>
+
+            <!--<siteMapNode  title="Manage Meter" url="/Modules/Configuration_Manager/confMngrManageMeters.aspx" />-->
+          <siteMapNode title="Manage Events">
+            <siteMapNode  title="Manage Events / Assign to Categories" url="/Modules/Configuration_Manager/confMngrManageEventAssignments.aspx" />
+            <siteMapNode  title="Manage Event Notifications(Enable/Disable Events)" url="/Modules/Configuration_Manager/ManagaNotifications.aspx" />
+          </siteMapNode>
+            
+            <siteMapNode  title="Manage Preferences" url="/Modules/Configuration_Manager/confMngrManageConstants.aspx" />
+          <siteMapNode  title="Manage Services" url="/Modules/Configuration_Manager/ManageServices.aspx" />
+        </siteMapNode>
+      <siteMapNode title="Asset Management">
+        <siteMapNode  title="Create Consumables/Spare Parts" url="/Modules/Configuration_Manager/ManageConsumables.aspx"></siteMapNode>
+        <siteMapNode  title="Create/Edit Assets" url="/Modules/Configuration_Manager/ManageAssets.aspx"></siteMapNode>
+        <siteMapNode  title="Create/Edit Asset Kits" url="/Modules/Configuration_Manager/CreateEditAssetkit.aspx"></siteMapNode>
+        <siteMapNode title="Asset Maintanence">
+          <siteMapNode  title="Move Asset to Maintanence" url="/Modules/Configuration_Manager/AssetRepairStatus.aspx"></siteMapNode>
+          <siteMapNode  title="Asset Maintanence" url="/Modules/Configuration_Manager/AssetMaintanence.aspx"></siteMapNode>
+        </siteMapNode>
+        <siteMapNode title="Component Maintanence">
+          <siteMapNode  title="Move to Maintanence" url="/Modules/Configuration_Manager/Comp_MovetoMaintanence.aspx"></siteMapNode>
+          <siteMapNode  title="Component Re-Assignment" url="/Modules/Configuration_Manager/Comp_Re_assignment.aspx"></siteMapNode>
+          <siteMapNode  title="Component Maintanence" url="/Modules/Configuration_Manager/ComponentMaintanence.aspx"></siteMapNode>
+        </siteMapNode>
+        <siteMapNode  title="Asset Status" url="/Modules/Configuration_Manager/AssetStatus.aspx"></siteMapNode>
+        <siteMapNode  title="Create/Edit Component" url="/Modules/Configuration_Manager/ManageComponents.aspx"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode title="Manage Sales">
+        <siteMapNode  title="Create/Edit Sales" url="/Modules/Configuration_Manager/ManageSales.aspx"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode title="Manage Jobs">
+        
+      </siteMapNode>
+      <siteMapNode title="Manage Projects(Jobs)">
+		  <siteMapNode  title="Create/Edit Projects(Jobs)" url="/Modules/Configuration_Manager/createProjects.aspx"></siteMapNode>
+        <siteMapNode  title="Approve/Reject Sale Opportunities" url="/Modules/Configuration_Manager/approveRejectJobs.aspx"></siteMapNode>
+        <siteMapNode  title="Manage Project(Job) Assignments" url="/Modules/Configuration_Manager/JobAssignments.aspx"></siteMapNode>
+        <siteMapNode  title="Assign Assets to Job Kits" url="/Modules/Configuration_Manager/AssignedAssetsToJobKits.aspx"></siteMapNode>
+        <siteMapNode  title="Assign Pending Assets to Job Kits" url="/Modules/Configuration_Manager/AssignAssetsToJobKitsLater.aspx"></siteMapNode>
+        <siteMapNode  title="Create Shipping Doc" url="/Modules/Configuration_Manager/CreateShippingDoc.aspx"></siteMapNode>
+        <siteMapNode title="Manual Shipping Ticket" >
+          
+            <siteMapNode  title="Create"  url="/Modules/Configuration_Manager/CreateShippingTicket.aspx" />
+            <siteMapNode  title="View/Edit"  url="/Modules/Configuration_Manager/ViewEditShippingDetails.aspx" />
+
+          
+        </siteMapNode>
+        <siteMapNode  title="Assign Quantity to Consumables" url="/Modules/Configuration_Manager/ManageConsumableQty.aspx"></siteMapNode>
+        <siteMapNode  title="Manage Project(Job) Re-Assignments / Move to Maintenece" url="/Modules/Configuration_Manager/JobReAssignments.aspx"></siteMapNode>
+        <siteMapNode  title="Real Time Asset Location/Assignments " url="/Modules/Configuration_Manager/realtimwAssetLocation.aspx"></siteMapNode>
+        <siteMapNode  title="Real Time Component Location" url="/Modules/Components/realtimeComponentLocation.aspx"/>
+        <siteMapNode  title="Close Project/Jobs" url="/Modules/Configuration_Manager/CloseProject.aspx"/>
+        <siteMapNode  title="Manage Components(Job) Assignments/Re-Assignment" url="/Modules/Components/JobAssignments.aspx"></siteMapNode>
+        <siteMapNode  title="Asset Shipment" >
+          <siteMapNode  title="Update Asset Shipping Status" url="/Modules/Configuration_Manager/ManageAssetStatus.aspx"/>
+          <siteMapNode  title="Asset Shipping Status" url="/Modules/Configuration_Manager/JobAssetsPrint.aspx"/>
+        </siteMapNode>
+        <siteMapNode  title="Component Shipment" >
+          <siteMapNode  title="Update Component Shipping Status" url="/Modules/Components/ManageComponentStatus.aspx"/>
+          <siteMapNode  title="Component Shipping Status" url="/Modules/Components/JobComponentsPrint.aspx"/>
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode title="Data Management" >
+        <siteMapNode  title="View/Submit Project(Job) Data" url="/Modules/Configuration_Manager/ManageDataEntry.aspx"/>
+        <siteMapNode  title="Daily Run Report" url="/Modules/Configuration_Manager/DailyRunReport_PRISM.aspx"/>
+        <siteMapNode  title="Import Daily Run Report" url="/Modules/Configuration_Manager/ImportDailyRunReport.aspx"/>
+        <siteMapNode  title="Upload WinSurv Data File" url="/Modules/Configuration_Manager/UploadWinSurvDataFile.aspx"/>
+        <siteMapNode  title="View WinSurv Data" url="/Modules/Configuration_Manager/ViewWinSurvData.aspx"/>
+      </siteMapNode>
+      
+        <siteMapNode title="Manage Events">
+            <siteMapNode  title="View/Configure Events" url="/Modules/Manage_Events/viewEvents.aspx"/>
+          <siteMapNode  title="View/Approve Task Order Documents" url="/Modules/Manage_Events/ApproveTaskOrderDocs.aspx"/>
+            <siteMapNode  title="User Actions" url="/Modules/Manage_Events/userActions.aspx"/>
+            <siteMapNode  title="Realtime Events" url="/Modules/Manage_Events/realtimeevents.aspx"/>
+            <siteMapNode  title="Event Dashboard" url="/Modules/Manage_Events/eventDashboard.aspx"/>
+        </siteMapNode>
+      <siteMapNode title="Reports">
+        <siteMapNode  title="Ops Manager DashBoard" url="/Modules/Configuration_Manager/OpsManagerDashBoard.aspx"/>
+        <siteMapNode  title="Master Coordinator DashBoard" url="/Modules/Configuration_Manager/MasterCoOrdinatorDashBoard.aspx"/>
+        <siteMapNode  title="Daily&#160;Run&#160;Dashboard  (Active Projects(Jobs))" url="/Modules/Configuration_Manager/DailyrunDashboard.aspx"/>
+        <siteMapNode  title="Command Center Dashboard (Active Projects(Jobs))" url="/Modules/Configuration_Manager/CommandCentralDashboard.aspx"/>
+      <siteMapNode  title="Project Dashboard" url="/Modules/Configuration_Manager/TelerikRadScheduler.aspx"/>
+        <siteMapNode  title="Daily&#160;Run&#160;Summary" url="/Modules/Configuration_Manager/Dailyrunsummary.aspx" />
+        <siteMapNode  title="Maintenence&#160;Report" url="/Modules/Configuration_Manager/AssetReport.aspx" />
+        <siteMapNode  title="Project Report" url="/Modules/Configuration_Manager/ProjectReport.aspx" />
+      </siteMapNode>
+
+       
+        <siteMapNode title="Audit Logs">
+            <siteMapNode  title="View Logs" url="/Modules/Audit_Log/Default.aspx" />
+        </siteMapNode>
+      <siteMapNode  title="My Account" url="~/ClientAdmin/MyAccount.aspx" />
+    </siteMapNode>
+</siteMap>  

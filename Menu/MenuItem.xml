@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+
+  <MenuItem Text="File" >
+
+    <MenuItem ImageUrl="~/Menu/Images/11new.gif" Text="New"  />
+
+    <MenuItem ImageUrl="~/Menu/Images/12open.gif" Text="Open"  />
+
+    <MenuItem ImageUrl="~/Menu/Images/13Save.gif" Text="Save"  />
+
+    <MenuItem ImageUrl="~/Menu/Images/14SaveAs.gif" Text="Save As"  />
+
+    <MenuItem ImageUrl="~/Menu/Images/15printPreview.gif" Text="Print Preview"  />
+
+    <MenuItem ImageUrl="~/Menu/Images/16print.gif" Text="Print"  />
+
+    <MenuItem ImageUrl="~/Menu/Images/17close.gif" Text="Close"  />
+
+  </MenuItem>
+
+  <MenuItem Text="Edit" >
+
+    <MenuItem ImageUrl="~/Menu/Images/21undo.gif" Text="Undo"  />
+
+    <MenuItem IsSeparator="True" />
+
+    <MenuItem ImageUrl="~/Menu/Images/cut.png" Text="Cut"  />
+
+    <MenuItem ImageUrl="~/Menu/Images/copy.png" Text="Copy"  />
+
+    <MenuItem ImageUrl="~/Menu/Images/paste.png" Text="Paste"  />
+
+    <MenuItem ImageUrl="~/Menu/Images/23clipboard.gif" Text="Clipboard..."  />
+
+  </MenuItem>
+
+  <MenuItem Text="Insert" >
+
+    <MenuItem Text="Break..."  />
+
+    <MenuItem Text="Page Numbers..."  />
+
+    <MenuItem Text="Date and Time..."  />
+
+    <MenuItem Text="Field..."  />
+
+    <MenuItem Text="Symbol..."  />
+
+    <MenuItem Text="Comment"  />
+
+    <MenuItem Text="Picture"  />
+
+    <MenuItem Text="Diagram"  />
+
+    <MenuItem Text="Hyperlink"  />
+
+  </MenuItem>
+
+</Menu>

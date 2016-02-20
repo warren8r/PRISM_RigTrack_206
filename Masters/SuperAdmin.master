@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SuperAdmin.master.cs" Inherits="SuperAdmin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="~/css/main.css" type="text/css" rel="Stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet/less" type="text/css" href="~/css/mdm.less" />
+    <script type="text/javascript">
+        less = {
+            env: "development", // or "production"
+            async: false,       // load imports async
+            fileAsync: false,   // load imports async when in a page under
+            // a file protocol
+            poll: 1000,         // when in watch mode, time in ms between polls
+            functions: {},      // user functions, keyed by name
+            dumpLineNumbers: "comments", // or "mediaQuery" or "all"
+            relativeUrls: false, // whether to adjust url's to be relative
+            // if false, url's are already relative to the
+            // entry less file
+            rootpath: ":/mdm.com/"// a path to add on to the start of every url
+            //resource
+        };
+    </script>
+    <script src="<%# ResolveUrl("~")%>/js/lesscss.js" type="text/javascript"></script>
+</head>
+<body>
+    <form id="SuperAdminForm" runat="server">
+    <div>
+        <telerik:RadScriptManager runat="server" ID="RadScriptManager1" />
+        <%--<telerik:RadSkinManager ID="QsfSkinManager" runat="server" ShowChooser="true" />--%>
+        <telerik:RadFormDecorator ID="QsfFromDecorator" runat="server" DecoratedControls="All"
+            EnableRoundedCorners="false" />
+        <table style="width: 100%" border="0" cellpadding="0" cellspacing="0" class="admin logo">
+            <tr>
+                <td style="height: 60px">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="left" style="padding-left: 10px; width:80px">
+                                <b style="color: White; font-size: 25px"><img src="<%= Page.ResolveUrl("~")%>images/Prism-Logo1_RGBTP_1.png" alt="logo" /></b>
+                            </td>
+                            <td align="right" style="padding-right: 10px">
+                                <table>
+                                    <tr>
+                                        <td style="color: White">
+                                            Welcome
+                                            <asp:Label ID="lbl_welcomename" runat="server" Font-Bold="true" ForeColor="YellowGreen"></asp:Label>
+                                        </td>
+                                        <td>
+                                            <asp:LinkButton ID="lnk_logout" runat="server" ForeColor="White" Text="Logout" OnClick="lnk_logout_Click"></asp:LinkButton>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: White" colspan="2">
+                                            Role:
+                                            <asp:Label ID="lbl_role" runat="server" Font-Bold="true" ForeColor="YellowGreen"></asp:Label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="line-height: 1px">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class="logo admin">
+                    <div class="qsf-demo-canvas">
+                        <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional" ChildrenAsTriggers="true">
+                            <ContentTemplate>
+                            <telerik:RadMenu ID="RadMenu1" runat="server" EnableRoundedCorners="true" EnableShadows="true">
+                            </telerik:RadMenu>
+                            <asp:Label ID="lbl_menu" runat="server"></asp:Label>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div id="main-container">
+            <div class="breadcrumbs">
+                <asp:SiteMapPath runat="server" ID="sitemap_path" PathSeparator=" &#187; " RenderCurrentNodeAsLink="false" ParentLevelsDisplayed="1" />
+            </div><!-- //.breadcrumbs -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    <!-- //#main-container -->
+    </div>
+    </form>
+</body>
+</html>

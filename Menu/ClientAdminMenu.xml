@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <Group>
+    <Item Text="Manage Family Users" Value="1" >
+      <Group>
+        <Item  Text="Manage User Types and Access" Href="~/ClientAdmin/ClientRole.aspx"  />
+        <Item  Text="Manage Family" Href="~/ClientAdmin/CreateClientUsers.aspx" />
+      </Group>
+    </Item>
+    <Item Text="Manage Health Records"  Value="2" >
+      <Group>
+        <Item  Text="Create New Health Record" Href="#" />
+        <Item  Text="View/Edit Health Record" Href="#" />
+        <Item  Text="Close Health Record" Href="#" />
+      </Group>
+    </Item>
+    <Item Text="Data Management"  Value="5" >
+      <Group>
+        <Item  Text="Set Validation Parameters" Href="#"/>
+        <Item  Text="Data Migration Setup " Href="javascript:void('')">
+          <Group>
+            <Item  Text="Setup Web Service" Href="~/Modules/DA/SetupWebService.aspx?"  />
+            <Item  Text="Data Migration (Global Health Record)" Href="~/Modules/DA/default.aspx?"  >
+              <Group>
+                <Item  Text="Manage Service Template" Href="~/Modules/DA/DaTeplateService.aspx?"/>
+                <Item  Text="Launch Service" Href="~/Modules/DA/DaLaunchService.aspx?"/>
+                <Item  Text="Web Scheduler" Href="~/Modules/DA/DAServices.aspx?"/>
+              </Group>
+            </Item>
+          </Group>
+        </Item>
+        <Item  Text="Launch Validation" Href="~/Modules/DA/LaunchVEE.aspx?"  >
+          <Group>
+            <Item  Text="Launch Validation" Href="#"></Item>
+            <Item  Text="Set Validation Routines" Href="#" />
+          </Group>
+        </Item>
+      </Group>
+    </Item>
+    <Item Text="Manage Events" Href="#" Value="6" >
+      <Group>
+        <Item  Text="Set Med to Med Conflicts" Href="#" />
+        <Item  Text="Set Dosage Conflicts" Href="#" />
+        <Item  Text="Set Time of Day Conflicts" Href="#" />
+        <Item  Text="View / Edit Data" Href="#" />
+        <Item  Text="Generate Alert or Take Action" Href="#" />
+      </Group>
+    </Item>
+    <Item Text="Medication Analysis" Href="#" Value="11" >
+      <Group>
+        <Item  Text="By User, By Time of Day" Href="#" />
+      </Group>
+    </Item>
+    <Item Text="Reports"  Value="6" >
+      <Group>
+        <Item  Text="Create Report Templates" Href="#" />
+        <Item  Text="View Reports" Href="#" />
+        <Item  Text="View/Edit Report Templates" Href="#" />
+		  <!--<Item  Text="View Daily Run Report" Href="~/Modules/RigTrack/ViewDailyRunReport.aspx" />-->
+      </Group>
+    </Item>
+    <Item Text="Audit Logs" Href="javascript:void('')" Value="13" />
+  </Group>
+</Menu>

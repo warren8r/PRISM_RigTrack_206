@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+
+  <Group>
+
+    <Item Text="Manage Admins" Key="A" Value="1" >
+      <Group>
+        <Item  Text="Manage Admin Roles/Access"  Href="~/SuperAdmin/Role.aspx"  />
+        <Item  Text="Manage Admins" Href="~/SuperAdmin/#" />
+      </Group>
+    </Item>
+    <Item Text="Manage Clients" Key="C"  Value="2" >
+      <Group>
+        <Item  Text="New Client Registration" Href="~/SuperAdmin/RegisterNewClient.aspx"  />
+        <Item  Text="Client Configuration" Href="~/SuperAdmin/ManageClients.aspx" />
+        <!--<Item  Text="Client Configuration" />-->
+      </Group>
+    </Item>
+    <Item Text="Configuration Manager" Href="~/Role.aspx" Value="4" >
+      <Group>
+        <Item  Text="Manage General Health Record Questionnaire" Href="#" />
+        <Item  Text="Manage Physical Health Record Questionnaire" Href="#" />
+        <Item  Text="Manage Mental Health Record Questionnaire" Href="#" />
+      </Group>
+    </Item>
+    <Item Text="Audit Logs" Href="javascript:void('')" Value="13" />
+  </Group>
+
+</Menu>

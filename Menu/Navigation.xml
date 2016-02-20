@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Home>
+  <Role id="1">   
+    <Menu text="Manage Admins" url="~/Role.aspx">
+      <SubMenu text="Manage Admin Roles/Access" url="~/Role.aspx" />
+      <SubMenu text="Manage Admins" url="CreateAdmin.aspx" />      
+    </Menu>
+    <Menu text="Manage Clients" url="~/Role.aspx">
+      <SubMenu text="New Client Registration" url="~/Role.aspx" />
+      <SubMenu text="View/Edit Clients" url="CreateAdmin.aspx" />
+      <SubMenu text="Client Configuration" url="CreateAdmin.aspx" />
+    </Menu>
+    <Menu text="Manage Client Users" url="~/Role.aspx">
+      <SubMenu text="Manage User Types" url="~/Role.aspx" />
+      <SubMenu text="Manage User Access" url="CreateAdmin.aspx" />
+      <SubMenu text="User Registration" url="CreateAdmin.aspx" />
+      <SubMenu text="View/Edit Users" url="CreateAdmin.aspx" />
+    </Menu>
+    <Menu text="Configuration Manager" url="~/Role.aspx">
+      <SubMenu text="Manage Tier 1 (Asset)" url="~/Role.aspx" />
+      <SubMenu text="Manage Tier 2" url="CreateAdmin.aspx" />
+      <SubMenu text="Manage Tier 3" url="CreateAdmin.aspx" />
+      <SubMenu text="Manage Tier n" url="CreateAdmin.aspx" />
+      <SubMenu text="Manage SDP" url="CreateAdmin.aspx" />
+      <SubMenu text="Setup Attribute / Data Intervals" url="CreateAdmin.aspx" />
+      <SubMenu text="Setup VEE Rules" url="CreateAdmin.aspx" />
+    </Menu>
+    <Menu text="Manage Events" url="~/Role.aspx">
+      <SubMenu text="Set rules" url="~/Role.aspx" />
+      <SubMenu text="View / Edit Data" url="CreateAdmin.aspx" />
+      <SubMenu text="Generate Alert or Take Action" url="CreateAdmin.aspx" /> 
+    </Menu>
+    <Menu text="Outage Management" url="~/Role.aspx">
+      <SubMenu text="Set rules" url="~/Role.aspx" />
+      <SubMenu text="View / Edit Data" url="CreateAdmin.aspx" />
+      <SubMenu text="Generate Work Order" url="CreateAdmin.aspx" />
+    </Menu>
+    <Menu text="Data Acquisiton / Management" url="~/Role.aspx">
+      <SubMenu text="Data Migration Setup (Web Services)" url="~/Role.aspx">
+        <SubMenu2 text="View / Edit Data" url="~/Role.aspx"></SubMenu2>
+      </SubMenu>
+      <SubMenu text="Data Import (Excel)" url="CreateAdmin.aspx" >
+        <SubMenu2 text="View / Edit Data" url="~/Role.aspx"></SubMenu2>
+      </SubMenu>
+      <SubMenu text="Manual Data Entry" url="CreateAdmin.aspx" >
+        <SubMenu2 text="View / Edit Data" url="~/Role.aspx"></SubMenu2>
+      </SubMenu>
+      <SubMenu text="Data Version and Retention" url="CreateAdmin.aspx" />     
+    </Menu>
+    <Menu text="Time of Use" url="~/Role.aspx">
+      <SubMenu text="Manage Programs" url="~/Role.aspx" />
+      <SubMenu text="Manage Program Attributes/Intervals" url="CreateAdmin.aspx" />
+      <SubMenu text="Manage Holidays" url="CreateAdmin.aspx" />
+      <SubMenu text="Manage Seasons" url="CreateAdmin.aspx" />
+      <SubMenu text="Manage Peaks" url="CreateAdmin.aspx" />
+      <SubMenu text="Manage Slab Rates" url="CreateAdmin.aspx" />
+    </Menu>
+    <Menu text="Manage Prepay" url="~/Role.aspx">
+      <SubMenu text="(need)" url="~/Role.aspx" />
+    </Menu>
+    <Menu text="Revenue Assurance" url="~/Role.aspx">
+      <SubMenu text="(place holder)" url="~/Role.aspx" />
+    </Menu>    
+    <Menu text="Billing" url="~/Role.aspx"/>
+    <Menu text="Demand Analysis" url="~/Role.aspx">
+      <SubMenu text="By SDP, By Account, By Customer" url="~/Role.aspx" />
+    </Menu>
+    <Menu text="Reports" url="~/Role.aspx"/>
+    <Menu text="Audit Logs" url="~/Role.aspx"/>
+    <Menu text="Manage Customers" url="~/Role.aspx"/>
+    <!--<Menu text="Item2"  url="Item2.aspx">
+      <SubMenu text="Page-2-1" url="Page-2-1.aspx">
+        <SubMenu text="Page-2-1-1" url="Page-2-1-1.aspx">
+          <SubMenu text="Page-2-1-1-1" url="Page-2-1-1-1.aspx" />
+          <SubMenu text="Page-2-1-1-2" url="Page-2-1-1-2.aspx" />
+          <SubMenu text="Page-2-1-1-3" url="Page-2-1-1-3.aspx" />
+        </SubMenu>
+        <SubMenu text="Page-2-1-2" url="Page-2-1-2.aspx"></SubMenu>
+      </SubMenu>
+      <SubMenu text="Page-2-2" url="Page-2-2.aspx">
+        <SubMenu text="Page-2-2-1" url="ComedyPage-2-2-1.aspx">
+          <SubMenu text="Page-2-2-1-1" url="Page-2-2-1-1.aspx" />
+          <SubMenu text="Page-2-2-1-2" url="Page-2-2-1-2.aspx" />
+          <SubMenu text="Page-2-2-1-3" url="Page-2-2-1-3.aspx" />
+          <SubMenu text="Page-2-2-1-4" url="Page-2-2-1-4.aspx" />
+        </SubMenu>
+        <SubMenu text="Page-2-2-2" url="Page-2-2-2.aspx" />
+        <SubMenu text="Page-2-2-3" url="Page-2-2-3.aspx" />
+      </SubMenu>
+    </Menu>
+    <Menu text="Item3" url="Item3.aspx" />-->
+  </Role>
+  <Role id="2">
+    <Menu text="Item4" url="Item4.aspx">
+      <SubMenu text="Page-4-1" url="Page-4-1.aspx" />
+      <SubMenu text="Page-4-2" url="Page-4-2.aspx" />
+    </Menu>
+    <Menu text="Item5" url="Item5.aspx" /> </Role>
+</Home>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+
+  <Group>
+   
+    <Item Text="Manage Admins" Key="A" Value="1" >
+      <Group>     
+        <Item  Text="Manage Admin Roles/Access"  Href="~/SuperAdmin/Role.aspx"  />
+        <Item  Text="Manage Admins" Href="~/SuperAdmin/CreateAdmin.aspx" />
+      </Group>
+    </Item>
+    <Item Text="Manage Clients" Key="C"  Value="2" >
+      <Group>
+        <Item  Text="New Client Registration" Href="~/SuperAdmin/RegisterNewClient.aspx"  />
+        <Item  Text="View/Edit Clients" Href="~/SuperAdmin/ManageClients.aspx" />
+        <Item  Text="Client Configuration" />
+      </Group>
+    </Item>
+    <Item Text="Manage Client Users" Href="~/SuperAdmin/Role.aspx" Value="3" >
+      <Group>
+        <Item  Text="Manage User Types" Href="~/SuperAdmin/Role.aspx" />
+        <Item  Text="Manage User Access" Href="CreateAdmin.aspx" />
+        <Item  Text="User Registration" Href="CreateAdmin.aspx" />
+        <Item  Text="View/Edit Users" Href="CreateAdmin.aspx" />
+      </Group>
+    </Item>
+
+    <Item Text="Configuration Manager" Href="~/Role.aspx" Value="4" >
+      <Group>
+        <Item  Text="Manage Tier 1 (Asset)" Href="~/Role.aspx" />
+        <Item  Text="Manage Tier 2" Href="CreateAdmin.aspx" />
+        <Item  Text="Manage Tier 3" Href="CreateAdmin.aspx" />
+        <Item  Text="Manage Tier n" Href="CreateAdmin.aspx" />
+        <Item  Text="Manage SDP" Href="CreateAdmin.aspx" />
+        <Item  Text="Setup Attribute / Data Intervals" Href="CreateAdmin.aspx" />
+        <Item  Text="Setup VEE Rules" Href="CreateAdmin.aspx" />
+      </Group>
+    </Item>
+    <Item Text="Manage Events" Href="~/Role.aspx" Value="5" >
+      <Group>
+        <Item  Text="Set rules" Href="~/Role.aspx" />
+        <Item  Text="View / Edit Data" Href="CreateAdmin.aspx" />
+        <Item  Text="Generate Alert or Take Action" Href="CreateAdmin.aspx" />
+      </Group>
+    </Item>
+    <Item Text="Outage Management" Href="~/Role.aspx" Value="6" >
+      <Group>
+        <Item  Text="Set rules" Href="~/Role.aspx" />
+        <Item  Text="View / Edit Data" Href="CreateAdmin.aspx" />
+        <Item  Text="Generate Work Order" Href="CreateAdmin.aspx" />
+      </Group>
+    </Item>
+    <Item Text="Data Acquisiton / Management" Href="~/Role.aspx" Value="7" >
+      <Group>
+        <Item  Text="Data Migration Setup (Web Services)" Href="~/Role.aspx">
+          <Group>
+            <Item  Text="View / Edit Data" Href="~/Role.aspx"></Item>
+          </Group>
+        </Item>
+        <Item  Text="Data Import (Excel)" Href="CreateAdmin.aspx"  >
+          <Group>
+            <Item  Text="View / Edit Data" Href="~/Role.aspx"></Item>
+          </Group>
+        </Item>
+        <Item  Text="Manual Data Entry" Href="CreateAdmin.aspx"  >
+          <Group>
+            <Item  Text="View / Edit Data" Href="~/Role.aspx"></Item>
+          </Group>
+        </Item>
+        <Item  Text="Data Version and Retention" Href="CreateAdmin.aspx"  />
+      </Group>
+    </Item>
+    <Item Text="Time of Use" Href="~/Role.aspx" Value="8" >
+      <Group>
+        <Item  Text="Manage Programs" Href="~/Role.aspx" />
+        <Item  Text="Manage Program Attributes/Intervals" Href="CreateAdmin.aspx" />
+        <Item  Text="Manage Holidays" Href="CreateAdmin.aspx" />
+        <Item  Text="Manage Seasons" Href="CreateAdmin.aspx" />
+        <Item  Text="Manage Peaks" Href="CreateAdmin.aspx" />
+        <Item  Text="Manage Slab Rates" Href="CreateAdmin.aspx" />
+      </Group>
+    </Item>
+    <Item Text="Manage Prepay" Href="~/Role.aspx" Value="9" >
+      <Group>
+        <Item  Text="(need)" Href="~/Role.aspx" />
+      </Group>
+    </Item>
+    <Item Text="Revenue Assurance" Href="~/Role.aspx" Value="10" >
+      <Group>
+        <Item  Text="(place holder)" Href="~/Role.aspx" />
+      </Group>
+    </Item>
+    <Item Text="Billing" Href="~/Role.aspx" Value="11" />
+    <Item Text="Demand Analysis" Href="~/Role.aspx" Value="12" >
+      <Group>
+        <Item  Text="By SDP, By Account, By Customer" Href="~/Role.aspx" />
+      </Group>
+    </Item>
+    <Item Text="Reports" Href="~/Role.aspx" Value="13" />
+    <Item Text="Audit Logs" Href="~/Role.aspx" Value="14" />
+    <Item Text="Manage Customers" Href="~/Role.aspx" Value="15" />
+  </Group>
+
+</Menu>

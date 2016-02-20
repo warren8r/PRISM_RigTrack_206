@@ -1,0 +1,721 @@
+﻿/* MAIN CSS FOR THE PROJECT. 
+ * A RECOURCE IS http://lesscss.org/
+ * WE ARE USING THE JQUERY PLUGIN.. */
+
+@green: #618740;
+@saveButton: #618740;
+@actionButton: maroon;
+@resetButton: green;
+
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+body
+{
+	background-color:#F1F1F1;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+
+	.blacktext{
+		color: black !important;
+		*{
+			color: black !important;
+		}
+
+		&:hover{
+			*{
+				color: black !important;
+			}
+		}
+	}	
+
+
+//CUSTOME BUTTONS
+	input[type=button]{
+
+	}
+
+	.save{
+		background: @saveButton;
+		color: #fff;
+	}
+	.action {
+		background: @actionButton;
+		color: #fff;
+	}
+	.reset{
+		background: @resetButton;
+		color: #fff;
+	}
+//END CUSTOME BUTTONS
+
+//STANDERD CSS CLASSES
+	.error{
+		color: red;
+	}
+
+	.success{
+		color: green;
+	}
+
+	.informational{
+		color: maroon;
+	}
+//END STANDERD CSS CLASSES
+
+	.addEllipse{
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+
+		&.width{
+			width: 100px; 
+		}
+	}
+
+	.breadcrumbs{
+		padding-top: 3px;
+		padding-bottom: 10px;
+		font-size: 1.5em;
+		display: inline-block;
+	}
+
+	.dialog-container{
+		width: 100%;
+		position: relative;
+	}
+
+	.center{
+		margin: 0px auto;
+		position: relative;
+	}
+		
+	#main-container{
+		position: relative;
+		width: 95%;
+		padding:5 5 5 5;
+		/*min-height: 700px;*/
+		margin: 0px auto;
+		margin-top: 1px;
+        /*jd took out border solid to take away top contanter and crapy border look*/
+		/*border:solid 1px #597791;*/
+	}
+	
+	fieldset
+	{
+		margin: 1em 0px;
+		padding: 1em;
+		border: 1px solid #ccc;
+		
+
+		p{
+			margin: 2px 12px 10px 10px;
+		}
+
+		&.login{
+			label{
+				display: block;
+			}
+		}
+		&.register{
+			label{
+				display: block;
+			}
+		}
+		&.changePassword label{
+			label{
+				display: block;
+			}
+		}
+		.inline{
+			display: inline;
+		}
+	}
+
+	.form-panel{
+		border-bottom: .5px solid gray;
+	}
+
+
+	div.custom_file_upload {
+		width: 230px;
+		height: 20px;
+		margin: 40px auto;
+	}
+
+	input.file {
+		width: 150px;
+		height: 20px;
+		border: 1px solid #BBB;
+		border-right: 0;
+		color: #888;
+		padding: 5px;
+	
+		-webkit-border-top-left-radius: 5px;
+		-webkit-border-bottom-left-radius: 5px;
+		-moz-border-radius-topleft: 5px;
+		-moz-border-radius-bottomleft: 5px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	
+		outline: none;
+	}
+
+	.form {
+		input[type="file"]{
+			z-index: 999;
+			line-height: 0;
+			font-size: 50px;
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+		}
+	
+		.add-photo-btn{
+			position:relative;
+			overflow:hidden;
+			cursor:pointer;
+			text-align:center;
+			background-color:#83b81a;
+			color:#fff !important;
+			display:block;
+			line-height:30px;
+		}
+
+		.path{	
+			width: 110px !important; 
+		}
+
+		input[type="text"]{
+			display: block;
+		}
+	}
+
+	#FileUpload {
+		position:relative;
+	}
+
+	#BrowserVisible {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 1;
+		background:url(http://i.stack.imgur.com/PaT3a.png) 100% 1px no-repeat;
+		width:345px;
+		height:30px;
+	}
+
+	#FileField {
+		width:250px;
+		margin-right:85px;
+		padding: 6px;
+		font-size: 13px;
+		background: #fff url('http://i.stack.imgur.com/CGQD7.gif') top left repeat-x;
+		border: 1px solid #d5d5d5;
+		color: #333;
+		border-radius: 4px 4px 4px 4px !important;
+	}
+
+	#BrowserHidden {
+		position:relative;
+		width:345px;
+		height:30px;
+		text-align: right;
+		-moz-opacity:0;
+		opacity: 0;
+		z-index: 2;
+	
+	}
+
+
+	.gis-form{
+		padding: 0px;
+		border: 0px;
+		
+		
+		position: relative;
+		background-color:#f1f1f1;
+		padding-top:0px;
+		 	
+		legend{
+			background-color:#f1f1f1;
+		}
+		table{
+			background-color:#f1f1f1;
+		}
+	}
+
+    .layout{
+        font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        border-collapse: collapse;
+        color: #000;
+        text-align: left;
+
+		table{
+			border-collapse:collapse;
+		}
+
+		.rborder{
+			border-right: 3px solid #ddd;
+			padding-right: 10px;
+		}
+    }
+
+	legend 
+	{
+		font-size: 11px;
+		font-weight: bold;
+		padding: 2px 4px 8px 4px;
+	}
+
+	
+    .loading
+    {
+        background-color: #fff;
+        height: 20px;
+        width: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 135px;
+
+		 img{
+			vertical-align: middle;
+		}
+	}
+
+	.logo{
+		color: #fff !important;
+		
+		width: 100%;
+		
+		background-color: #597791;
+		
+		
+		*{
+			color: #fff !important;
+		}
+
+		&.admin{
+			background: #4B6C9E !important;
+
+			
+			.rmFirst{
+				color: rgb( 97,97,97 );
+			}
+		}
+
+		td, th {
+		   border:none;
+		}
+
+		.menu{
+			margin: 0px auto;
+			color: #fff !important;
+
+			li{
+				z-index: 1000 !important;
+
+				&:hover{
+					z-index: 1000 !important;
+				}
+			}
+		}
+	}
+
+	.RadComboBox, .rcbList{
+		font: 12px/18px "segoe ui", arial, sans-serif !important;
+		color: #2b2c20 !important;
+
+		.rcbInput{
+			font-style: normal !important;
+		}
+
+		.rcbHovered{
+			background: #8c9f5f !important;
+			color: #2b2c20 !important;
+
+			label{
+				background: #8c9f5f !important;
+				color: #2b2c20 !important;
+			}
+		}
+
+		.rddlItem{
+			margin: 0;
+			padding: 2px 6px;
+			height: auto;
+			min-height: 13px;
+			background-repeat: repeat-x;
+		}
+
+		.rddlItemSelected label{
+			color: white !important;
+			background: #cf4900 !important;
+		}
+	}
+
+
+	.rcbFocused, .rcbHovered{
+		background: maroon !important;
+		color: #fff !important;
+		*{
+			color: #fff !important;
+		}
+	}
+
+	.rtsLI{
+		*{
+			color: #fff !important;
+		}
+	}
+	
+    .postbackCSS
+    {
+        text-align: center;
+        margin: 30px 20px 0 0;
+    }
+
+	.Base
+	{
+		display: inline-block;
+		font: 12px/18px "segoe ui", arial, sans-serif;
+		height: 20px;
+		overflow: hidden;
+		text-align: center;
+		vertical-align: middle;
+		width: 121px;
+		color: #fff;
+		border: 1px solid #333;
+	}
+
+	.content-container{
+		margin-top: 0px;
+	}
+
+	.dialog{
+		position: absolute;
+		top: 0px;
+		right: 10px;
+		border: 2px solid @green+10;
+		background-color: @green;
+		width: 164px;
+		min-height: 60px;
+		padding: 20px 10px 10px 10px;
+
+		&.panel{
+			top: 50px; 
+		}
+
+		&.input-align{
+			top: 105px;
+		}
+
+		.RadInput, .RadDropDownList {
+			padding-bottom: 5px; 
+		}
+		
+		.rlbCheck{
+			float: left;
+		}
+
+		.right-x{
+			position: absolute;
+			top: 0px; 
+			right: 0px;
+			height: 15px;
+			width: 15px; 
+			display: none;
+		}
+	}
+
+	input, textarea{
+		//.rounded-corners( 3px );
+		clear: both;
+		border: 0px none;
+	}	
+
+	form{
+		.input{
+			padding-bottom: 2px;
+			//width: 300px;
+
+			.label{
+				display: -webkit-inline-box;
+				padding-bottom: 1px;
+				width: 90px;
+				clear: both;
+			}
+			.input{
+				display: inline;
+				margin-top: 1px;
+				input, textarea {
+					&:before{
+						content: ": ";
+					}
+				}
+				.ColorPickerPreview, .RadColorPicker, .rcpIcon{
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	.form{
+		display: block;
+		float: none;
+
+		.input{
+			padding-bottom: 2px;
+			display: block;
+			float: none !important;
+			
+			.label{
+				width: 90px;
+				display: block;
+			}
+			.input{
+				input, textarea{
+					display: inline;
+				}
+			}
+		}
+	}
+
+	td.input{
+		vertical-align: top;
+		valign: top;	
+	}
+
+	.L0
+	{
+		border: 0 none;
+	}
+	.L1
+	{
+		background-color: #ff3933;
+	}
+	.L2
+	{
+		background-color: #ff6633;
+	}
+	.L3
+	{
+		background-color: #ff3399;
+	}
+	.L4
+	{
+		background-color: #cccc33;
+	}
+	.L5
+	{
+		background-color: #33cc00;
+	}
+	.smallheader
+	{
+		background-color: #4B6C9E;
+		height: 30px;
+	}
+    
+	.RadMenu{
+		z-index: 1000;
+
+		*{
+			color: #fff !important;
+		}
+
+		.rmText{
+			color: #fff !important;	
+			padding: 0 12px 1px 0;
+			font-family: arial;
+			text-align: left;	
+		}
+		
+		.rmLevel1, rmFirst{
+			.rmText{
+				color: rgb( 97,97,97 ) !important;
+			}	
+		}
+	}
+
+	.EditedItem, .EditedItem TABLE TR 
+	{ 
+		background-color: #ffffe1; 
+		background-image: none; 
+	} 
+
+	.filterOptions{
+		padding-bottom: 5px;
+	}
+
+	.RadGrid_Forest
+	{
+		.input{	
+			float: left; 
+			width: 140px !important;
+			padding-left: 10px;
+			input, textarea, .RadDropDownList {
+				width: 100% !important;
+			}
+		}
+		a
+		{
+			color:Blue;
+		}
+		
+		.rgSelectedRow  td
+		{ 
+			background-color:Black !important;
+		} 
+
+		.rgHoveredRow td
+		{
+			background-color:#BFD299 !important;
+		}
+
+	}
+
+	.RadForm_Forest.rfdGrids .rfdTable a
+	{
+		color:Blue;
+	}
+
+	.filters{
+		display: inline-block;
+		width: 1024px; 
+		padding-bottom: 5px ;
+
+		.label{
+			width: 80px; 
+			display: inline;
+			float: left;
+		}
+		.row-container{
+			display: table;
+			position: relative;
+			padding-top: 5px;
+		}
+		.input-container{
+			float: left;
+			position: relative;
+			padding-right: 12px;
+			width: 150px;
+
+			input, select, textarea, .RadDropDownList  {	
+				width: 100% !important;
+
+				:hover{
+					color: #fff !important;
+				}
+			}
+		}
+	}
+
+	.message{
+		float: right;
+		padding-top: 8px;
+	}
+
+	.mdmSelect{
+		//overflow-y: scroll;
+
+		li{
+			display: block;
+		}
+
+		&.small{
+			height: 300px;
+			width: 300px;
+		}
+
+		.rlbCheck{
+			display: inline;
+			float: left;
+			//width: 251px;
+			width: 20px;//mike change
+		}
+		.rlbTemplate{
+			//display: inline;
+			//width: 100px;
+		}	
+		.combo-item-template{
+			width: 100%;
+			label{
+				display: inline-block;
+				//width: 170px;
+			}
+		}
+
+		checkbox{
+			float: left; 
+		}
+
+		.options{
+			float: right;
+			height: 15px;
+			padding-right: 3px;
+		}
+	}
+
+	.mdmTable{
+		border-collapse:collapse;
+		td{
+			padding: 10px;
+		}
+	}
+
+	th{
+		color: #fff !important;
+
+		*{
+			color: #fff !important;
+		}
+	}
+
+	.mdmGrid, .RadGrid, .mdmSelect {
+		text-align: left !important;	
+	}
+	.firstColumn{
+		width: 90px;
+		font-align: center;
+	}
+
+	div.star{
+		position: absolute; 
+		right: 0px;
+		top: 10px ;
+		color: #000;
+	}
+
+	.star
+	{
+		color: Red;
+		font-size: 10px;
+	}
+
+	#Billing{
+	}
+
+	.ui-dialog{
+		z-index: 2000;
+	}
+}
+	
+.RadComboBox_Forest .rcbFocused .rcbInput 
+{
+	color: #000 !important;
+}
+
+.rcbFocused *, body .rcbHovered *
+{
+	color: #000 !important;
+}

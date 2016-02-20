@@ -1,0 +1,12 @@
+﻿.RTBLabel
+{ 
+    position:relative;
+    top:-10px;
+} 
+.RTBTextBox
+{ 
+    position:relative;
+    top:10px;
+    left:-65px;
+    width: 150px !important;
+}

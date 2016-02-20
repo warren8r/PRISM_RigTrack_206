@@ -1,0 +1,747 @@
+﻿
+
+/*// jd this for CreateEditToolGroup page to stop weird overflow*/
+.TelerikModalOverlay {
+        position: absolute !important;
+    left: 0px !important;
+    top: 0px !important;
+    z-index: 7999 !important;
+    opacity: 0.5 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgb(170, 170, 170) !important;
+}
+
+
+.popupradgrid {
+     margin: 0 0 0 -50px;
+}
+/*// These Two used On Page CreateEdittoolgroup*/
+
+
+.RadWindow{
+   
+    z-index: 999999 !important;
+}
+
+/*// jd for hiding controls but still able to access the controls*/ 
+.hidedropdown {
+    display:none;
+}
+
+.button-PrintButton
+{   
+    background: url(images/PrintButton.png) no-repeat;
+    width: 57px;
+    height: 22px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: White;
+    font-size: small;
+    font-weight: normal;
+    vertical-align: middle;
+    text-align: center; 
+    border: none;  
+}
+
+.button-PrintButton:hover
+{   
+    cursor:pointer;
+}
+
+.button-RedrawButton
+{   
+    background: url(images/btnRedraw.png) no-repeat;
+    width: 57px;
+    height: 22px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: White;
+    font-size: small;
+    font-weight: normal;
+    vertical-align: middle;
+    text-align: center; 
+    border: none;  
+}
+
+.button-RedrawButton:hover
+{   
+    cursor:pointer;
+}
+
+.button-ReloadButton
+{   
+    background: url(images/RedrawButton.png) no-repeat;
+    width: 57px;
+    height: 22px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: White;
+    font-size: small;
+    font-weight: normal;
+    vertical-align: middle;
+    text-align: center; 
+    border: none;  
+}
+
+.button-ReloadButton:hover
+{   
+    cursor:pointer;
+}
+
+.button-SearchMain
+{   
+    background: url(images/MainSearchButton.png) no-repeat;
+    width: 52px;
+    height: 22px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: White;
+    font-size: small;
+    font-weight: normal;
+    vertical-align: middle;
+    text-align: center; 
+    border: none;  
+}
+
+.button-SearchMain:hover
+{   
+    cursor:pointer;
+}
+
+
+
+
+/*// search button orange*/
+.button-CloseRed
+{   
+    background: url(images/CloseButton.png) no-repeat;
+    width: 55px;
+    height: 22px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: White;
+    font-size: small;
+    font-weight: normal;
+    vertical-align: middle;
+    text-align: center; 
+    border: none;  
+}
+
+.button-CloseRed:hover
+{   
+    cursor:pointer;
+}
+
+
+/*// search button orange*/
+.button-searchOrange
+{   
+    background: url(images/SearchButton.png) no-repeat;
+    width: 164px;
+    height: 25px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: White;
+    font-size: small;
+    font-weight: normal;
+    vertical-align: middle;
+    text-align: center; 
+    border: none;  
+}
+
+.button-searchOrange:hover
+{   
+    cursor:pointer;
+}
+
+ /*jd going to use this later for image buttons*/
+.button-graphZoomIn
+{   
+    background: url(images/zoomIn80.png) no-repeat;
+    width: 80px;
+    height: 80px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: White;
+    font-size: small;
+    font-weight: normal;
+    vertical-align: middle;
+    text-align: center; 
+    border: none;  
+}
+
+.button-graphZoomIn:hover
+{   
+    cursor:pointer;
+    background: url(images/zoomIn80Hover.png) no-repeat;
+    width: 80px;
+    height: 80px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: White;
+    font-size: small;
+    font-weight: normal;
+    vertical-align: middle;
+    text-align: center; 
+    border: none;
+}
+
+.button-graphZoomOut
+{   
+    background: url(images/zoomOut70.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: White;
+    font-size: small;
+    font-weight: normal;
+    vertical-align: middle;
+    text-align: center; 
+    border: none;
+}
+
+.button-graphZoomOut:hover
+{   
+    cursor:pointer;
+    background: url(images/zoomOut70Hover.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: White;
+    font-size: small;
+    font-weight: normal;
+    vertical-align: middle;
+    text-align: center; 
+    border: none;
+}
+
+
+/*jd zoom buttons on plot graph*/
+.button-graphZoomIn2
+{   
+    background: url(images/zoomIn80.png) no-repeat;
+    background-size:contain;
+    width: 40px;
+    height: 40px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: White;
+    font-size: small;
+    font-weight: normal;
+    vertical-align: middle;
+    text-align: center; 
+    border: none;   
+}
+
+.button-graphZoomIn2:hover
+{   
+    cursor:pointer;
+    background: url(images/zoomIn80Hover.png) no-repeat;
+    background-size:contain;
+    width: 40px;
+    height: 40px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: White;
+    font-size: small;
+    font-weight: normal;
+    vertical-align: middle;
+    text-align: center; 
+    border: none;
+}
+
+.button-graphZoomOut2
+{   
+    background: url(images/zoomOut70.png) no-repeat;
+    background-size:contain;
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: White;
+    font-size: small;
+    font-weight: normal;
+    vertical-align: middle;
+    text-align: center; 
+    border: none;
+}
+
+.button-graphZoomOut2:hover
+{   
+    cursor:pointer;
+    background: url(images/zoomOut70Hover.png) no-repeat;
+    background-size:contain;
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: White;
+    font-size: small;
+    font-weight: normal;
+    vertical-align: middle;
+    text-align: center; 
+    border: none;
+}
+
+ /*JD for the graphs cursor*/
+canvas 
+{
+    cursor:crosshair;
+}
+
+
+.tooltipDemoMinimumCurvature {
+    position: relative;
+    display: inline;
+    text-decoration: none;
+    left: 5px;
+    top: 0px;
+    z-index: 99999;
+}
+
+    .tooltipDemoMinimumCurvature:hover:before {
+        border: solid;
+        border-color: transparent rgb(10, 10, 10);
+        border-width: 6px 6px 6px 0px;
+        bottom: 21px;
+        content: "";
+        left: 35px;
+        top: 5px;
+        position: absolute;
+        z-index: 95;
+    }
+
+    .tooltipDemoMinimumCurvature:hover:after {
+        /*background: rgb(111, 13, 53);*/
+        background: url(Images/Minimum-Curvature.jpg) no-repeat;
+        /*background-repeat: no-repeat;*/
+        background-size: 60%;
+        border-radius: 5px;
+        color: #fff;
+        width: 368px;
+        height: 174px;
+        left: 40px;
+        top: -5px;
+        content: attr(alt);
+        position: absolute;
+        padding: 5px 15px;
+        z-index: 95;
+    }
+
+
+
+.tooltipDemoRadiusCurvature {
+    position: relative;
+    display: inline;
+    text-decoration: none;
+    left: 5px;
+    top: 0px;
+    z-index: 99999;
+}
+
+    .tooltipDemoRadiusCurvature:hover:before {
+        border: solid;
+        border-color: transparent rgb(10, 10, 10);
+        border-width: 6px 6px 6px 0px;
+        bottom: 21px;
+        content: "";
+        left: 35px;
+        top: 5px;
+        position: absolute;
+        z-index: 95;
+    }
+
+    .tooltipDemoRadiusCurvature:hover:after {
+        /*background: rgb(111, 13, 53);*/
+        background: url(Images/radius-of-curvature.jpg) no-repeat;
+        /*background-repeat: no-repeat;*/
+        background-size: 60%;
+        border-radius: 5px;
+        color: #fff;
+        width: 368px;
+        height: 174px;
+        left: 40px;
+        top: -5px;
+        content: attr(alt);
+        position: absolute;
+        padding: 5px 15px;
+        z-index: 95;
+    }
+
+
+.tooltipDemoAverageAngle {
+    position: relative;
+    display: inline;
+    text-decoration: none;
+    left: 5px;
+    top: 0px;
+    z-index: 99999;
+}
+
+    .tooltipDemoAverageAngle:hover:before {
+        border: solid;
+        border-color: transparent rgb(10, 10, 10);
+        border-width: 6px 6px 6px 0px;
+        bottom: 21px;
+        content: "";
+        left: 35px;
+        top: 5px;
+        position: absolute;
+        z-index: 95;
+    }
+
+    .tooltipDemoAverageAngle:hover:after {
+        /*background: rgb(111, 13, 53);*/
+        background: url(Images/angle-averaging.jpg) no-repeat;
+        /*background-repeat: no-repeat;*/
+        background-size: 60%;
+        border-radius: 5px;
+        color: #fff;
+        width: 368px;
+        height: 174px;
+        left: 40px;
+        top: -5px;
+        content: attr(alt);
+        position: absolute;
+        padding: 5px 15px;
+        z-index: 95;
+    }
+
+
+.tooltipDemoTangential {
+    position: relative;
+    display: inline;
+    text-decoration: none;
+    left: 5px;
+    top: 0px;
+    z-index: 99999;
+}
+
+    .tooltipDemoTangential:hover:before {
+        border: solid;
+        border-color: transparent rgb(10, 10, 10);
+        border-width: 6px 6px 6px 0px;
+        bottom: 21px;
+        content: "";
+        left: 35px;
+        top: 5px;
+        position: absolute;
+        z-index: 95;
+    }
+
+    .tooltipDemoTangential:hover:after {
+        /*background: rgb(111, 13, 53);*/
+        background: url(Images/Tangential.jpg) no-repeat;
+        /*background-repeat: no-repeat;*/
+        background-size: 60%;
+        border-radius: 5px;
+        color: #fff;
+        width: 368px;
+        height: 174px;
+        left: 40px;
+        top: -5px;
+        content: attr(alt);
+        position: absolute;
+        padding: 5px 15px;
+        z-index: 95;
+    }
+
+
+.tooltipDemoBalancedTangential {
+    position: relative;
+    display: inline;
+    text-decoration: none;
+    left: 5px;
+    top: 0px;
+    z-index: 99999;
+}
+
+    .tooltipDemoBalancedTangential:hover:before {
+        border: solid;
+        border-color: transparent rgb(10, 10, 10);
+        border-width: 6px 6px 6px 0px;
+        bottom: 21px;
+        content: "";
+        left: 35px;
+        top: 5px;
+        position: absolute;
+        z-index: 95;
+    }
+
+    .tooltipDemoBalancedTangential:hover:after {
+        /*background: rgb(111, 13, 53);*/
+        background: url(Images/Balanced-Tangential.jpg) no-repeat;
+        /*background-repeat: no-repeat;*/
+        background-size: 60%;
+        border-radius: 5px;
+        color: #fff;
+        width: 368px;
+        height: 174px;
+        left: 40px;
+        top: -5px;
+        content: attr(alt);
+        position: absolute;
+        padding: 5px 15px;
+        z-index: 95;
+    }
+
+h1, h2, h3, h4 {
+    color: #010A15;
+    margin-bottom: 0px;
+    margin-top: 3px;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+h20 {
+    color: #010A15;
+    margin-bottom: 0px;
+    margin-top: 3px;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+h6 {
+    color: #010A15;
+    margin-bottom: 0px;
+    margin-top: 3px;
+    font-size: 13px;
+    font-variant: small-caps;
+    text-transform: none;
+    border-bottom: 1px solid #010a15;
+    font-family: "Segoe UI",Arial,Helvetica,sans-serif;
+    font-weight: 700;
+}
+
+.RadForm.rfdHeading h6 {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+}
+
+
+/*// jd for tegular asp.net buttons, just for the cursor to be pointer*/
+.RadForm a.rfdSkinnedButton, .RadForm a.rfdSkinnedButton * {
+    cursor: pointer !important;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 22px;
+    line-height: 22px;
+    text-decoration: none;
+    display: inline-block;
+    border: 0!important;
+    text-align: center;
+    font: normal 12px "Segoe UI",Arial,Helvetica,sans-serif!important;
+    white-space: nowrap;
+}
+
+
+
+/*// jd for button pointer telerik , radio and so on*/
+.RadButton.rbDisabled, .RadButton.rbDisabled .rbPrimaryIcon, .RadButton.rbDisabled .rbSecondaryIcon, .RadButton.rbDisabled .rbDecorated, .rbPrimaryIcon.rbToggleRadio, .rbPrimaryIcon.rbToggleCheckbox, .rbSecondaryIcon.rbToggleRadio, .rbSecondaryIcon.rbToggleCheckbox, .rbPrimaryIcon.rbToggleRadioChecked, .rbPrimaryIcon.rbToggleCheckboxChecked, .rbSecondaryIcon.rbToggleRadioChecked, .rbSecondaryIcon.rbToggleCheckboxChecked, .rbPrimaryIcon.rbToggleCheckboxFilled, .rbSecondaryIcon.rbToggleCheckboxFilled {
+    cursor: pointer !important;
+}
+
+.RadForm_WebBlue.rfdFieldset fieldset, .RadForm_WebBlue.rfdFieldset table.rfdRoundedWrapper_fieldset fieldset, .RadForm_WebBlue.rfdFieldset fieldset.rfdFieldset {
+    border: 1px solid #69798c;
+    background-image: url('WebResource.axd?d=8npACXpKZ7Sfl7PRJrlgsPejiqE9WYTkSh1Rd2dSm_JNKVKSZqCbKzAc…Fh9wquhPHQjuIjfm-Ih_w2Sh0yd-OCqdkyRRkcVIE4qBDYHAmqL0&t=635739346850924152') !important;
+    background-color: rgba(161, 179, 195, 0.33);
+}
+
+
+
+
+/*// jd css loading animation*/
+.loader2 {
+    font-size: 90px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin: 72px auto;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load6 1.7s infinite ease;
+    animation: load6 1.7s infinite ease;
+}
+
+@-webkit-keyframes load6 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        box-shadow: 0 -0.83em 0 -0.4em #4b6c9e, 0 -0.83em 0 -0.42em #4b6c9e, 0 -0.83em 0 -0.44em #4b6c9e, 0 -0.83em 0 -0.46em #4b6c9e, 0 -0.83em 0 -0.477em #4b6c9e;
+    }
+
+    5%, 95% {
+        box-shadow: 0 -0.83em 0 -0.4em #4b6c9e, 0 -0.83em 0 -0.42em #4b6c9e, 0 -0.83em 0 -0.44em #4b6c9e, 0 -0.83em 0 -0.46em #4b6c9e, 0 -0.83em 0 -0.477em #4b6c9e;
+    }
+
+    10%, 59% {
+        box-shadow: 0 -0.83em 0 -0.4em #4b6c9e, -0.087em -0.825em 0 -0.42em #4b6c9e, -0.173em -0.812em 0 -0.44em #4b6c9e, -0.256em -0.789em 0 -0.46em #4b6c9e, -0.297em -0.775em 0 -0.477em #4b6c9e;
+    }
+
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em #4b6c9e, -0.338em -0.758em 0 -0.42em #4b6c9e, -0.555em -0.617em 0 -0.44em #4b6c9e, -0.671em -0.488em 0 -0.46em #4b6c9e, -0.749em -0.34em 0 -0.477em #4b6c9e;
+    }
+
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em #4b6c9e, -0.377em -0.74em 0 -0.42em #4b6c9e, -0.645em -0.522em 0 -0.44em #4b6c9e, -0.775em -0.297em 0 -0.46em #4b6c9e, -0.82em -0.09em 0 -0.477em #4b6c9e;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        box-shadow: 0 -0.83em 0 -0.4em #4b6c9e 0 -0.83em 0 -0.42em #4b6c9e, 0 -0.83em 0 -0.44em #4b6c9e, 0 -0.83em 0 -0.46em #4b6c9e, 0 -0.83em 0 -0.477em #4b6c9e;
+    }
+}
+
+@keyframes load6 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        box-shadow: 0 -0.83em 0 -0.4em #4b6c9e, 0 -0.83em 0 -0.42em #4b6c9e, 0 -0.83em 0 -0.44em #4b6c9e, 0 -0.83em 0 -0.46em #4b6c9e, 0 -0.83em 0 -0.477em #4b6c9e;
+    }
+
+    5%, 95% {
+        box-shadow: 0 -0.83em 0 -0.4em #4b6c9e, 0 -0.83em 0 -0.42em #4b6c9e, 0 -0.83em 0 -0.44em #4b6c9e, 0 -0.83em 0 -0.46em #4b6c9e, 0 -0.83em 0 -0.477em #4b6c9e;
+    }
+
+    10%, 59% {
+        box-shadow: 0 -0.83em 0 -0.4em #4b6c9e, -0.087em -0.825em 0 -0.42em #4b6c9e, -0.173em -0.812em 0 -0.44em #4b6c9e, -0.256em -0.789em 0 -0.46em #4b6c9e, -0.297em -0.775em 0 -0.477em #4b6c9e;
+    }
+
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em #4b6c9e, -0.338em -0.758em 0 -0.42em #4b6c9e, -0.555em -0.617em 0 -0.44em #4b6c9e, -0.671em -0.488em 0 -0.46em #4b6c9e, -0.749em -0.34em 0 -0.477em #4b6c9e;
+    }
+
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em #4b6c9e, -0.377em -0.74em 0 -0.42em #4b6c9e, -0.645em -0.522em 0 -0.44em #4b6c9e, -0.775em -0.297em 0 -0.46em #4b6c9e, -0.82em -0.09em 0 -0.477em #4b6c9e;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        box-shadow: 0 -0.83em 0 -0.4em #4b6c9e, 0 -0.83em 0 -0.42em #4b6c9e, 0 -0.83em 0 -0.44em #4b6c9e, 0 -0.83em 0 -0.46em #4b6c9e, 0 -0.83em 0 -0.477em #4b6c9e;
+    }
+}
+
+
+/*jd for table cell headers*/
+fieldset table table th {
+    font-size: small;
+    background-color: #3a4f63;
+    color: white;
+}
+
+
+body {
+    background-color: #F1F1F1;
+    font-size: 11px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #000000;
+}
+
+.logo {
+    color: #fff !important;
+    width: 100%;
+    background-color: #597791;
+}
+
+fieldset {
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+    fieldset p {
+        margin: 2px 12px 10px 10px;
+    }
+
+    fieldset.login label, fieldset.register label, fieldset.changePassword label {
+        display: block;
+    }
+
+    fieldset label.inline {
+        display: inline;
+    }
+
+legend {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 4px 8px 4px;
+}
+
+.star {
+    color: Red;
+    font-size: 10px;
+}
+
+.Base {
+    display: inline-block;
+    font: 12px/18px "segoe ui", arial, sans-serif;
+    height: 20px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    width: 121px;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.L0 {
+    border: 0 none;
+}
+
+.L1 {
+    background-color: #ff3933;
+}
+
+.L2 {
+    background-color: #ff6633;
+}
+
+.L3 {
+    background-color: #ff3399;
+}
+
+.L4 {
+    background-color: #cccc33;
+}
+
+.L5 {
+    background-color: #33cc00;
+}
+
+.smallheader {
+    background-color: #597791;
+    height: 30px;
+}
+
+.radMenuBar {
+    text-align: left !important;
+    color: white !important;
+}
+
+.EditedItem, .EditedItem TABLE TR {
+    background-color: #ffffe1;
+    background-image: none;
+}
+
+.RadGrid_Forest .rgRow a, .RadGrid_Forest .rgAltRow a, .RadGrid_Forest .rgEditRow a, .RadGrid_Forest .rgFooter a, .RadGrid_Forest .rgEditForm a {
+    color: Blue;
+}
+
+.RadForm_Forest.rfdGrids .rfdTable a {
+    color: Blue;
+}
