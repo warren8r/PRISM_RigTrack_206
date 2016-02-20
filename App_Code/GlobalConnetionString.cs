@@ -28,11 +28,11 @@ public class GlobalConnetionString
         // string connection="";
         if (clientCode == "Client_1")
         {
-            return "uid=sa;pwd=fortech$;database='" + ConfigurationManager.AppSettings["DB_Partial_Name"].ToString() + "';server=" + ConfigurationManager.AppSettings["DatabaseServer"].ToString();
+            return "uid=sa;pwd=j3nk1ns1;database='" + ConfigurationManager.AppSettings["DB_Partial_Name"].ToString() + "';server=" + ConfigurationManager.AppSettings["DatabaseServer"].ToString();
         }
         else
         {
-            return "uid=sa;pwd=fortech$;database='" + clientCode + "';server=" + ConfigurationManager.AppSettings["DatabaseServer"].ToString();
+            return "uid=sa;pwd=j3nk1ns1;database='" + clientCode + "';server=" + ConfigurationManager.AppSettings["DatabaseServer"].ToString();
         }
 
     }

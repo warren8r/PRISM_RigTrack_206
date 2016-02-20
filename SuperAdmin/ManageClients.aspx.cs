@@ -268,7 +268,7 @@ public partial class ManageClients : System.Web.UI.Page
                 //}
                 //DataTable dt_getclientcode = SqlHelper.ExecuteDataset(GlobalConnetionString.ConnectionString, CommandType.Text, "select clientCode from Clients where clientID='" + vieweduserid + "'").Tables[0];
                 SqlHelper.ExecuteNonQuery(GlobalConnetionString.ConnectionString, CommandType.Text, "Create DataBase [" + lbl_clcode.Text + "]");
-                string _connectionsql = @"Persist Security Info=False;User ID=sa;pwd=E@gl3sFli;server=67.40.65.178;database=" + lbl_clcode.Text + "";//;integrated security=SSPI";
+                string _connectionsql = @"Persist Security Info=False;User ID=sa;pwd=j3nk1ns1;server=localhost;database=" + lbl_clcode.Text + "";//;integrated security=SSPI";
                 ScriptDB.ExecuteSQLScript(Server.MapPath(ConfigurationManager.AppSettings["mapserverpath"].ToString()) + "/dbScripts/CreateTableScript.sql", _connectionsql);
                 resetall();
                 //_connectionsql = @"Persist Security Info=False;User ID=sa;pwd=sa;server=LUCKNOW;database=" + lbl_clientcode.Text + "";//;integrated security=SSPI";
